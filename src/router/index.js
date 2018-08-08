@@ -6,6 +6,7 @@ import Paid from '@/components/Paid'
 import Overdue from '@/components/Overdue'
 import Open from '@/components/Open'
 import History from '@/components/History'
+// import Test from '@/components/Test'
 
 Vue.use(Router)
 
@@ -42,5 +43,11 @@ export default new Router({
       name: 'Open',
       component: Open
     },
+
+    // {
+    //   path: '/test',
+    //   name: 'Test',
+    //   component: Test
+    // }
   ]
 })

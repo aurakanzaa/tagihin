@@ -2,86 +2,47 @@
     <div class="container-fluid top">
         <div class="col-lg-4 col-centered"></div>
         <div class="col-lg-4 col-centered">
-
-            <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
-            <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-            <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-            <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
-            <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
-            </div>
-
-            <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p> 
-            </div>
-
-            <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-            </div>
-
-            <div id="Oslo" class="tabcontent">
-            <h3>Oslo</h3>
-            <p>Oslo is the capital of Norway.</p>
-            </div>
-
-
+            <ul>
+                <li><a class="active" href="#paid">Paid</a></li>
+                <li><a href="#overdue">Overdue</a></li>
+                <li><a href="#open">Open</a></li>
+            </ul>
         </div>
         <div class="col-lg-4 col-centered"></div>
     </div>
 </template>
 
 <script>
-    function openCity(cityName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(cityName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
 </script>
 
 <style>
-    body {font-family: "Lato", sans-serif;}
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
 
-.tablink {
-    background-color: #555;
-    color: white;
+li {
     float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
 }
 
-.tablink:hover {
-    background-color: #777;
-}
-
-/* Style the tab content */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 50px;
+li a {
+    display: block;
+    color: #666;
     text-align: center;
+    padding: 14px 53px;
+    text-decoration: none;
 }
 
-#London {background-color:red;}
-#Paris {background-color:green;}
-#Tokyo {background-color:blue;}
-#Oslo {background-color:orange;}
-    
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
 </style>

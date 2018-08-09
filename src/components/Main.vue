@@ -10,9 +10,6 @@
     <br>
     <p>Dont Have Account ? Yo can register <router-link to="/">Here</router-link></p>
   </div>
-
-    
-    
 </template>
 
 
@@ -34,7 +31,7 @@
 </style>
 
 <script>
-    
+
 
 </script>
 

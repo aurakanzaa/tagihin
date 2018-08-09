@@ -17,7 +17,9 @@
     "bootstrap-vue": "^2.0.0-rc.11",
     "i": "^0.3.6",
     "npm": "^6.3.0",
+    "onsenui": "^2.10.4",
     "vue": "^2.5.2",
+    "vue-onsenui": "^2.6.1",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

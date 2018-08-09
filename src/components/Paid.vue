@@ -3,25 +3,24 @@
     <div class="col-lg-4 col-centered"></div>
     <div class="col-lg-4 col-centered">
         <div class="form-panel">
-        
             <div class="row">
                 <div class="col-xs-8 col-md-8">
                 <!-- <span class="leftTitle">Riwayat Transaksi</span> -->
                 <p class="leftTitle">Riwayat Transaksi</p>
 
                 </div>
-                
+
                 <div id="rcorners3" class="col-xs-4 col-md-4">
-                    <p>Paid</p> 
+                    <p>Paid</p>
                 </div>
             </div>
-            
+
 
             <div>
-                <p class="bluebox">Invoice</p>           
+                <p class="bluebox">Invoice</p>
             </div>
 
-    
+
             <div>
                     <p class="bold">Nama</p>
                     <p class="left">Adryan</p>
@@ -61,10 +60,10 @@
                             <label class="control-label txt">Rp 446.980</label>
                         </div>
                     </div>
-            
 
 
-                    <!-- <p class="bold">Jumlah 
+
+                    <!-- <p class="bold">Jumlah
                     <label class="col-sm-5 col-sm-5 control-label txt">Rp 446.980</label>
                     </p> -->
 
@@ -72,10 +71,10 @@
                     <p class="left">Jangan lupa buat beli kebutuhan harian keluarga</p>
 
                     <br><br>
-                        
 
 
-                        
+
+
 
 
                     <!-- BUTTON -->
@@ -86,19 +85,21 @@
         </div>
     </div>
     <div class="col-lg-4 col-centered"></div>
-</div>     
+</div>
 </template>
 
 <script>
-    
+
 
 </script>
 
 
 <style>
-    
-    
-    .leftTitle{ 
+    .top{
+        margin-top: -40px;
+    }
+
+    .leftTitle{
         text-align: left;
         color: black;
         padding-left: 30px;
@@ -127,7 +128,7 @@
         text-align: left;
         margin-left: 30px;
     }
- 
+
     .txt{
         font-size: 30px;
         color: #4286F1;
@@ -147,7 +148,7 @@
         padding-left: 40px;
         background-color: #4286F1;
     }
-    
+
     .button {
         background-color: #4286F1;
         padding-bottom: 30px;
@@ -161,7 +162,7 @@
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer; */
-       
+
     }
 
     #rcorners3 {
@@ -174,7 +175,7 @@
         padding-right: 130px; 
         padding-left: 15px;
         width: 100px;
-        height: 40px; 
+        height: 40px;
     }
 
 </style>

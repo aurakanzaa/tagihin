@@ -172,7 +172,11 @@
         font-weight: bold;
         text-align:left;
         padding: 10px;
+<<<<<<< HEAD
         padding-right: 135px;
+=======
+        padding-right: 130px; 
+>>>>>>> d81558066a94af1f5d9bb20c48d6dd304629c2f7
         padding-left: 15px;
         width: 100px;
         height: 40px;

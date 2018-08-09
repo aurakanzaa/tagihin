@@ -7,6 +7,7 @@ import Overdue from '@/components/Overdue'
 import Open from '@/components/Open'
 import History from '@/components/History'
 // import Test from '@/components/Test'
+import TabSample from '@/components/TabSample'
 
 Vue.use(Router)
 
@@ -43,6 +44,11 @@ export default new Router({
       name: 'Open',
       component: Open
     },
+    {
+      path : '/tab',
+      name : 'TabSample',
+      component : TabSample
+    }
 
     // {
     //   path: '/test',

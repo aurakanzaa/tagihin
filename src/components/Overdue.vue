@@ -88,7 +88,6 @@
     </div>
     <div class="col-lg-4 col-centered"></div>
 </div>    
-</div>    
 </template>
 
 <script>

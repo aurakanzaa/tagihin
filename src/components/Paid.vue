@@ -86,8 +86,7 @@
         </div>
     </div>
     <div class="col-lg-4 col-centered"></div>
-</div>    
-</div>    
+</div>     
 </template>
 
 <script>
@@ -97,9 +96,7 @@
 
 
 <style>
-    .top{
-        margin-top: -40px;
-    }
+    
     
     .leftTitle{ 
         text-align: left;
@@ -153,6 +150,7 @@
     
     .button {
         background-color: #4286F1;
+        padding-bottom: 30px;
         /* border-radius: 8px;
         border: none;
         color: white;

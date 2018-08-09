@@ -96,9 +96,10 @@
 </script>
 
 <style>
-    .top{
+    
+    /* .top{
         margin-top: -40px;
-    }
+    } */
     .font{
         font-size:30px;
         color:blue;
@@ -156,6 +157,7 @@
     .button1 {
         background-color: #4286F1;
         height: 40px;
+        font-size: 18px;
        
     }
     

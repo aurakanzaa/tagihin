@@ -173,7 +173,7 @@
         font-weight: bold;
         text-align:left;
         padding: 10px;
-        padding-right: 135px; 
+        padding-right: 130px; 
         padding-left: 15px;
         width: 100px;
         height: 40px; 

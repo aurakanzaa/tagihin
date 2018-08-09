@@ -1,48 +1,144 @@
 <template>
-    <div class="container-fluid top">
-        <div class="col-lg-4 col-centered"></div>
-        <div class="col-lg-4 col-centered">
-            <ul>
-                <li><a class="active" href="#paid">Paid</a></li>
-                <li><a href="#overdue">Overdue</a></li>
-                <li><a href="#open">Open</a></li>
-            </ul>
-        </div>
-        <div class="col-lg-4 col-centered"></div>
-    </div>
+    <b-container>
+    <b-row>
+        <b-col cols="6" md="4"></b-col>
+        <b-col cols="6" md="4">
+            <h2>Riwayat Transaksi</h2>
+            <b-tabs card v-model="tabIndex">
+            
+            <!-- ===PAID=== -->
+            <b-tab title="Paid" :title-link-class="linkClass(0)">
+                <b-container class="bv-example-row">
+                    <b-row>
+                        <b-col class="left"><b>INV 110</b></b-col>
+                        <b-col class="right"><b>10.000</b></b-col>
+                    </b-row>
+                    <b-row>
+                        <b-col class="left">Teguh</b-col>
+                        <b-col class="right">1 Agustus 2018</b-col>
+                    </b-row>
+                    <hr>
+                    <b-row>
+                        <b-col class="left"><b>INV 110</b></b-col>
+                        <b-col class="right"><b>10.000</b></b-col>
+                    </b-row>
+                    <b-row>
+                        <b-col class="left">Teguh</b-col>
+                        <b-col class="right">1 Agustus 2018</b-col>
+                    </b-row>
+                    <hr>
+                    <b-row>
+                        <b-col class="left"><b>INV 110</b></b-col>
+                        <b-col class="right"><b>10.000</b></b-col>
+                    </b-row>
+                    <b-row>
+                        <b-col class="left">Teguh</b-col>
+                        <b-col class="right">1 Agustus 2018</b-col>
+                    </b-row>
+                </b-container>
+            </b-tab>
+
+            <!-- ===OPEN=== -->
+            <b-tab title="Overdue" :title-link-class="linkClass(1)">
+                <b-container class="bv-example-row">
+                    <b-row>
+                        <b-col class="left"><b>INV 112</b></b-col>
+                        <b-col class="right"><b>10.000</b></b-col>
+                    </b-row>
+                    <b-row>
+                        <b-col class="left">Teguh</b-col>
+                        <b-col class="right">1 Agustus 2018</b-col>
+                    </b-row>
+                    <hr>
+                    <b-row>
+                        <b-col class="left"><b>INV 112</b></b-col>
+                        <b-col class="right"><b>10.000</b></b-col>
+                    </b-row>
+                    <b-row>
+                        <b-col class="left">Teguh</b-col>
+                        <b-col class="right">1 Agustus 2018</b-col>
+                    </b-row>
+                    <hr>
+                    <b-row>
+                        <b-col class="left"><b>INV 112</b></b-col>
+                        <b-col class="right"><b>10.000</b></b-col>
+                    </b-row>
+                    <b-row>
+                        <b-col class="left">Teguh</b-col>
+                        <b-col class="right">1 Agustus 2018</b-col>
+                    </b-row>
+                </b-container>
+            </b-tab>
+
+            <!-- ====OPEN=== -->
+            <b-tab title="Open" :title-link-class="linkClass(2)">
+                <b-container class="bv-example-row">
+                    <b-row>
+                        <b-col class="left"><b>INV 115</b></b-col>
+                        <b-col class="right"><b>10.000</b></b-col>
+                    </b-row>
+                    <b-row>
+                        <b-col class="left">Teguh</b-col>
+                        <b-col class="right">1 Agustus 2018</b-col>
+                    </b-row>
+                    <hr>
+                    <b-row>
+                        <b-col class="left"><b>INV 115</b></b-col>
+                        <b-col class="right"><b>10.000</b></b-col>
+                    </b-row>
+                    <b-row>
+                        <b-col class="left">Teguh</b-col>
+                        <b-col class="right">1 Agustus 2018</b-col>
+                    </b-row>
+                    <hr>
+                    <b-row>
+                        <b-col class="left"><b>INV 115</b></b-col>
+                        <b-col class="right"><b>10.000</b></b-col>
+                    </b-row>
+                    <b-row>
+                        <b-col class="left">Teguh</b-col>
+                        <b-col class="right">1 Agustus 2018</b-col>
+                    </b-row>
+                </b-container>
+            </b-tab>
+            </b-tabs>
+
+        </b-col>
+        <b-col cols="6" md="4"></b-col>
+    </b-row>
+</b-container>
 </template>
 
-<script>
-</script>
-
-<style>
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 53px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #ddd;
-}
-
-li a.active {
-    color: white;
-    background-color: #4CAF50;
-}
+<style lang="">
+    .left{
+        text-align:left;
+    }
+    .right{
+        text-align:right;
+    }
+    h2{
+        text-align:left;
+        color: black;
+        margin-left:15px;
+    }
 </style>
+
+
+<script>
+    export default {
+  data () {
+    return {
+      tabIndex: 0
+    }
+  },
+  methods: {
+    linkClass (idx) {
+      if (this.tabIndex === idx) {
+        return ['bg-primary', 'text-light']
+      } else {
+        return ['bg-light', 'text-info']
+      }
+    }
+  }
+}
+</script>
